@@ -21,7 +21,10 @@ gitDirectories('../')
 
 npm i -g node-git-directories
 
-gitDirs | sed '1d' | awk -F'/' '{print $2}'
+gitDirs | sed '1d' | awk -F'/' '{print $2}' # default location: ../
+# list of git repos, one per line.
+
+gitDirs /home/you/code | sed '1d' | awk -F'/' '{print $2}' # location: /home/you/code/
 # list of git repos, one per line.
 
 ```
