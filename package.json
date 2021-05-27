@@ -1,6 +1,6 @@
 {
     "name": "node-git-directories",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "Get all the directories that are git repositories - node module",
     "main": "index.js",
     "scripts": {
@@ -27,5 +27,8 @@
     },
     "devDependencies": {
         "@types/node": "^15.6.1"
+    },
+    "bin": {
+        "gitDirs": "gitDirs.bin.js"
     }
 }

@@ -1,15 +1,28 @@
 # node-git-directories
 
-Get only the directories that are git repositories - node module
+Get only the directories that are git repositories - node module and executable
 
 ## Usage
+
+### as a library
 
 ```javascript
 
 const gitDirectories = require('node-git-directories')
 
 gitDirectories('../')
-// This should contain your git repo's name.
+// array of git repos
+
+```
+
+### as a terminal util
+
+```shell
+
+npm i -g node-git-directories
+
+gitDirs | sed '1d' | awk -F'/' '{print $2}'
+# list of git repos, one per line.
 
 ```
 
