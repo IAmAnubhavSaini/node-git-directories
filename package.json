@@ -1,14 +1,15 @@
 {
     "name": "node-git-directories",
-    "version": "4.0.0",
+    "version": "6.0.0",
     "description": "Get all the directories that are git repositories - node module",
-    "main": "index.js",
+    "main": "src/index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc --project tsconfig.json"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/gitfaf/node-git-directories.git"
+        "url": "git+https://github.com/iamanubhavsaini/node-git-directories.git"
     },
     "keywords": [
         "git directories",
@@ -18,17 +19,17 @@
     "author": "Git Faf <git.faf@gmail.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/gitfaf/node-git-directories/issues"
+        "url": "https://github.com/iamanubhavsaini/node-git-directories/issues"
     },
-    "homepage": "https://github.com/gitfaf/node-git-directories#readme",
+    "homepage": "https://github.com/iamanubhavsaini/node-git-directories#readme",
     "dependencies": {
         "is-git-init": "^1.0.0",
-        "node-directories": "^1.0.1"
+        "node-directories": "^3.0.0"
     },
     "devDependencies": {
         "@types/node": "^15.6.1"
     },
     "bin": {
-        "gitDirs": "gitDirs.bin.js"
+        "gitDirs": "src/gitDirs.bin.js"
     }
 }
